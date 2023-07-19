@@ -110,8 +110,7 @@ print(paste('mean = ', mean(my1000$k3),' sd = ',sd(my1000$k3)))
 
 ```
 
-This graph displays the density distribution of average temperature data collected by Homer. The x-axis represents the average temperature, calculated from 9 data points each, in a sample of 1000 data points. The y-axis shows the density, indicating the frequency of each average temperature. The blue dashed line represents the overall mean of the average temperatures. The standard deviation shrinks as the number gets higher example 4 is divided by 2, 9 is divided by 3. 16 divided by 4 and so on.
-The first standard deviation was 41 and now on the 5th one its getting cut down to a third of that total which we got 13.68 but we expect: `r sd(my1000$k3)`.
+The mean of approximately 49.844, obtained from the sample means calculated using the Central Limit Theorem, is compared to the theoretical expectation from CLT, which predicts that larger sample sizes will yield sample means that closely approximate the true population mean. The x-axis represents the average temperature, calculated from 9 data points each, in a sample of 1000 data points. The y-axis shows the density, indicating the frequency of each average temperature. The standard deviation shrinks as the number gets higher example 4 is divided by 2, 9 is divided by 3. 16 divided by 4 and so on. The first standard deviation was 41 and now on the 5th one its getting cut down to a third of that total which we got 13.68 but we expect: `r sd(my1000$k3)`.
 
 
 ```{r}
