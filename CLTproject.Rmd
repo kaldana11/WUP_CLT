@@ -156,7 +156,7 @@ xlab("temperature") + ylab(" density")
 print(paste('mean = ', mean(my1000$k5),' sd = ',sd(my1000$k5)))
 ```
 
-
+The standard deviation is now one fifth of what it was in the beginning we got 8 and we expected`r sd(my1000$k5)` and it is only off by a little bit. Our hypothesis was incorrect but not as far along as we thought. This graph portrays a mean of 49.9924.
 
 
 
