@@ -156,7 +156,7 @@ xlab("temperature") + ylab(" density")
 print(paste('mean = ', mean(my1000$k5),' sd = ',sd(my1000$k5)))
 ```
 
-The standard deviation is now one fifth of what it was in the beginning we got 8 and we expected`r sd(my1000$k5)` and it is only off by a little bit. Our hypothesis was incorrect but not as far along as we thought. This graph portrays a mean of 49.9924.
+As the sample size increases from 16 to 25, the standard deviation of the average temperatures may decrease. Larger sample sizes generally lead to more precise estimates of the true mean, resulting in a narrower distribution around the mean. The density plot with a sample size of 25 might show reduced variability compared to the plot with a sample size of 16, as the larger sample allows for better representation of the underlying population. The standard deviation is now one fifth of what it was in the beginning we got 8 and we expected`r sd(my1000$k5)` and it is only off by a little bit. Our hypothesis was incorrect but not as far along as we thought. 
 
 ```{r}
 numb = 36
