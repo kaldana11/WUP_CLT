@@ -177,7 +177,7 @@ xlab("temperature") + ylab(" density")
 print(paste('mean = ', mean(my1000$k6),' sd = ',sd(my1000$k6)))
 ```
 
-As the sample size increases from 16 to 36, the standard deviation of the average temperatures is expected to decrease. This is because larger sample sizes tend to better represent the population, resulting in more precise estimates of the true mean. Therefore, the density plot with a sample size of 36 is likely to have a narrower distribution around the mean, reflecting reduced variability in the data compared to the plot with a sample size of 16. We expect 6 and we got `r sd(my1000$k6)`. My expected value was off by a little, it rounds up to 7 with the code.
+With a sample size of 36, the mean of approximately 49.77 aligns with the theoretical expectation from the  CLT, which predicts that larger sample sizes result in sample means that closely approximate the true population mean. As the sample size increases from 16 to 36, the standard deviation of the average temperatures is expected to decrease. This is because larger sample sizes tend to better represent the population, resulting in more precise estimates of the true mean. Therefore, the density plot with a sample size of 36 is likely to have a narrower distribution around the mean, reflecting reduced variability in the data compared to the plot with a sample size of 16. We expect 6 and we got `r sd(my1000$k6)`. My expected value was off by a little, it rounds up to 7 with the code.
 
 
 
