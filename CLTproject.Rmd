@@ -114,7 +114,25 @@ This graph displays the density distribution of average temperature data collect
 The first standard deviation was 41 and now on the 5th one its getting cut down to a third of that total which we got 13.68 but we expect: `r sd(my1000$k3)`.
 
 
+```{r}
+numb = 16
+Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
+mdata <-matrix(Hdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+my1000$k4 = x.avg
 
+
+p <- ggplot(my1000, aes(x=k4),col=sex) +
+geom_density() +
+
+# Add mean line
+geom_vline(aes(xintercept=mean(k4)),
+color="blue", linetype="dashed", size=1)
+p + ggtitle("n = 16") +
+xlab("temperature") + ylab(" density")
+
+print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
+```
 
 
 
