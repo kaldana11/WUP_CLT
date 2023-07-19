@@ -134,7 +134,7 @@ xlab("temperature") + ylab(" density")
 print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
 ```
 
-This code creates a density plot for 1000 rows of temperature data, each calculated from a sample of 16 data points. The standard deviation is now a quarter of what it was which is 10.31 and we expected `r sd(my1000$k4)`.
+As the sample size increases from 9 to 16, the standard deviation of the average temperatures might change. Larger sample sizes tend to result in more precise estimates of the true mean, potentially leading to a decrease in the standard deviation. This code creates a density plot for 1000 rows of temperature data, each calculated from a sample of 16 data points. The standard deviation is now a quarter of what it was which is 10.31 and we expected `r sd(my1000$k4)`.
 
 ```{r}
 numb = 25
